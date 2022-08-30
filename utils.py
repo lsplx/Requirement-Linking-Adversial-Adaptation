@@ -7,7 +7,7 @@ from torch.utils.data import DataLoader, Dataset
 from params import param
 import numpy as np
 
-#之前是\t
+
 def read_data(file_path_dataset):
     return pd.read_csv(file_path_dataset, delimiter='\t')
 
