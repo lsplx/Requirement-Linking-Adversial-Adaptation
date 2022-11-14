@@ -18,7 +18,8 @@ Cross-Domain Requirement Linking via Adversarial Domain Adaptation
 python main.py 
 
 # Models
-Models for migration from HIPPA dataset to Easy dataset:
+Models for migration from HIPPA Dataset to Easy Dataset:
+
 
 
 
