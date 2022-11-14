@@ -5,7 +5,7 @@ Cross-Domain Requirement Linking via Adversarial Domain Adaptation
 - core/pretrain.py contains the second phase of the model (Pre-training the Linking Model in the Source Domain) of the RADIATION model
 - core/adapt.py contains the third stage of the model (Distance-enhanced Adversarial Representation Adaptation) of the RADIATION model
 
-## Packages
+# Packages
 - torch
 - pandas
 - pytorch_pretrained_bert
@@ -13,7 +13,7 @@ Cross-Domain Requirement Linking via Adversarial Domain Adaptation
 - gensim
 - torch
 
-## Run the code
+# Run the code
 python main.py 
 
 # Models
