@@ -19,7 +19,7 @@ python main.py
 
 # Models
 Models for migration from HIPPA Dataset to Easy Dataset:  
-link: https://pan.baidu.com/s/12ZAyIVu-qZvkAIDjAcwHtA password: i7eq 
+link: https://pan.baidu.com/s/12ZAyIVu-qZvkAIDjAcwHtA; password: i7eq 
 
 
 
