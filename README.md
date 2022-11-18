@@ -7,7 +7,7 @@ Cross-Domain Requirement Linking via Adversarial Domain Adaptation
 - The params folder contains model configuration information and running parameters
 - data/processed folder contains the dataset mentioned in our paper, and we provide the processed version of the original dataset
 
-architecture:  
+RADIATION Architecture:  
 ![Image text](https://github.com/lsplx/Requirement-Linking-Adversial-Adaptation/blob/main/pic/%E6%9E%B6%E6%9E%84%E5%9B%BE%E7%BB%88.png)
 
 # Packages
