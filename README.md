@@ -22,7 +22,7 @@ python main.py
 Models consisting of 1) an encoder trained on the source domain;  
 2) a trained classifier on the source domain;  
 3) a target domain encoder trained in the adversarial adaptation phase  
-Models for migration from HIPPA Dataset to Easy Dataset for four components of RADIATION:  
+Models for migration from HIPPA Dataset to Easy Dataset for RADIATION:  
 link: https://pan.baidu.com/s/12ZAyIVu-qZvkAIDjAcwHtA; password: i7eq 
 
 
