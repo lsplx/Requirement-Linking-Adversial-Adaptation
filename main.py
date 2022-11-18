@@ -184,35 +184,6 @@ if __name__ == '__main__':
         sentencetwo = each[1]
 
         constraint_num = 0
-        # for eachword in idf_words:
-        #     if eachword.lower() in each[0]:
-        #         sentenceone = each[0].replace( eachword.lower() ,"[MASK]")
-        #         each[0] = sentenceone
-            # if eachword.upper() in each[0]:
-            #     sentenceone = each[0].replace( eachword.upper() ,"[MASK]")
-            #     each[0] = sentenceone
-            #INFUSION
-            # if "Subsystem" in each[0]:
-            #     sentenceone = each[0].replace("Subsystem","[MASK]")
-            #     each[0] = sentenceone
-            # if "Pump" in each[0]:
-            #     sentenceone = each[0].replace("Pump","[MASK]")
-            #     each[0] = sentenceone
-            # if eachword.upper() in each[0]:
-            #     sentenceone = each[0].replace(eachword.upper(),"[MASK]")
-            #     each[0] = sentenceone
-            # if  eachword.lower()  in each[1]:
-            #     sentencetwo = each[1].replace( eachword.lower() ,"[MASK]")
-            #     each[1] = sentencetwo
-            # if eachword.upper() in each[1]:
-            #     sentenceone = each[1].replace( eachword.upper() ,"[MASK]")
-            #     each[1] = sentenceone
-            # if "Subsystem" in each[1]:
-            #     sentencetwo = each[1].replace("Subsystem","[MASK]")
-            #     each[1] = sentencetwo
-            # if "Pump" in each[1]:
-            #     sentencetwo = each[1].replace("Pump","[MASK]")
-            #     each[1] = sentencetwo
         indexed_tokens = tokenizer.encode_plus(text=sentenceone,
                                                     text_pair=sentencetwo,
                                                     max_length=args.seqlen,
@@ -222,54 +193,10 @@ if __name__ == '__main__':
         src_train_labels.append(int(each[2]))
         src_train_sequences.append(indexed_tokens)
         
-        
-    # sentence_list = []
-    # for sentence in src_test:
-    #     sentence_list.append(remove_stopwords(sentence[0]) + remove_stopwords(sentence[1]))
-    # vectorizer = CountVectorizer()
-    # X = vectorizer.fit_transform(sentence_list[:10000]) 
-    # words = vectorizer.get_feature_names()
-    # X_mat=X.toarray()
-    # doc_num=X.shape[0]
-    # idf_list = []
-    # for index in range(len(words)):
-    #     idf=math.log(doc_num/(sum(np.sign(X_mat[:,index]))+1))
-    #     idf_list.append(idf)
-    #     # print(words[index]+' '+str(idf))
-    # emerge_list = zip(idf_list, words)
-    # sort_list = sorted(emerge_list)
-    # idf_words = []
-    # extract_num = 0
-    # for each in sort_list:
-    #     if extract_num < 0:
-    #         idf_words.append(each[1])
-    #         extract_num += 1
-    #     else:
-    #         break
+       
     for snum,each in enumerate(src_test):
         sentenceone = each[0]
         sentencetwo = each[1]
-        # constraint_num = 0
-        # for eachword in idf_words:
-            # if eachword.lower() in each[0]:
-            #     sentenceone = each[0].replace( eachword.lower() ,"[MASK]")
-            #     each[0] = sentenceone
-            # if eachword.upper() in each[0]:
-            #     sentenceone = each[0].replace( eachword.upper() ,"[MASK]")
-            #     each[0] = sentenceone
-            #INFUSION
-            # if "Subsystem" in each[0]:
-            #     sentenceone = each[0].replace("Subsystem","[MASK]")
-            #     each[0] = sentenceone
-            # if "Pump" in each[0]:
-            #     sentenceone = each[0].replace("Pump","[MASK]")
-            #     each[0] = sentenceone
-            # if eachword.upper() in each[0]:
-            #     sentenceone = each[0].replace(eachword.upper(),"[MASK]")
-            #     each[0] = sentenceone
-            # if  eachword.lower()  in each[1]:
-            #     sentencetwo = each[1].replace( eachword.lower() ,"[MASK]")
-            #     each[1] = sentencetwo
         indexed_tokens = tokenizer.encode_plus(text=sentenceone,
                                                     text_pair=sentencetwo,
                                                     max_length=args.seqlen,
