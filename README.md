@@ -1,5 +1,6 @@
 # Description
-Cross-Domain Requirement Linking via Adversarial Domain Adaptation
+Cross-Domain Requirement Linking via Adversarial Domain Adaptation  
+RADIATION is used to train the requirements linking model from the source domain and then test the requirements linking performance in the target domain (a different domain).
 
 - main.py contains the first phase (Requirements Linking Sample Construction) and the fourth phase (Target Linking Model Construction) of the RADIATION model
 - core/pretrain.py contains the second phase of the model (Pre-training the Linking Model in the Source Domain) of the RADIATION model
